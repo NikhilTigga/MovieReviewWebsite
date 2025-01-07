@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0f172a;
+}
+
+header{
+    background-color: black;
+    
+}
+.Logo{
+    padding: 7px 26px 14px 126px;
+   
+}
+
+.main{
+    background-color:#0f172a;
+    padding: 25px;
+    height: 100vh;
+    width: 94%;
+    margin: 0 auto;
+}
+.contentArea{
+   
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.mainContentArea{
+    background-color:#020617;
+
+}
+.reviewButton{
+   text-align: right;
+   padding: 0px 11px 4px 0px;
+}
+.moviePoster{
+    padding: 7px 34px 0px 4px;
+}
+.movieDetails{
+    padding: 7px 100px 0px 0px;
+}
+.movieDetails ul{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFFFFF;
+  list-style: none;
+  padding: 25px 0px 0px 0px;
+}
+.movieDetails p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: gray;
+
+}
+.container{
+    background-color: #f8fafcd4;
+    margin: 0 auto;
+    width: 38em;
+    margin-top: 20px;
+
+}
+.profileImage img{
+    border-radius: 50px; /* Adjust the value as needed */
+    border: 5px solid #000000; /* Optional, if you want a visible border */
+    
+    background-color: #f8f8f8
+}
+.profileImage{
+    padding: 4px 0px 2px 8px;
+
+}
+.nameAndDate{
+    padding: 10px 0px 0px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+.reviewContent{
+    background-color: #E6E6E6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.criticRating{
+background-color: #000000;
+}
+.likesAndComments span{
+    padding: 0px 5px 0px 0px
+}
+.likesAndComments{
+    text-align: right;
+    color: #fef08a;
+  
+}
+.icon-textarea-container{
+    display: flex;
+    align-items: baseline;
+}
+.comment-icon{
+    margin-right: 10px;
+}
+.icon-textarea-container textarea{
+    flex: 1;
+    width: 100%;
+    background-color: #D9D9D9;
+} 
+.textReview{
+    background-color:#0f172a;
+    position: fixed;
+    bottom: 0;
+    left: 52.7%; /* Start from the middle of the page */
+    transform: translateX(-50%); /* Shift it back by half its width to center */
+    width: 42%;
+}
+.textLogo {
+    background-color: white;
+    position: relative;
+    top: 100px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 3px 4px 10px;
+    left: -42px;
+}
+.sliderContainer{
+    width: 115vh;
+   margin: 2px;
+}
+.homeContainer{
+    width: 58%;
+    margin: 0 auto;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.contentAreaAndVideo{
+    margin: 22px 0px 22px 0px;
+}
+    
+
+.movieTrailer{
+    margin-right: 44px;
+}
+.monthAndYear{
+    background-color: #000000;
+    width: 115vh;
+    display: flex;
+    margin: 67px 0px 6px 0px;
+    
+}
+.dropdown{
+    margin: 5px;
+    padding: 5px;}
+.select {
+    width: 30vh;
+    margin-left: 20px;
+    background-color: #cbd5e1;
+}
+
+.movieTrailer iframe{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+
+}

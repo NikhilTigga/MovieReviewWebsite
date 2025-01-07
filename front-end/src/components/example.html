@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Section</title>
+  <style>
+    /* Add CSS here */
+    .container {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#slideSection {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  transition: max-height 0.4s ease-out;
+  overflow: hidden;
+}
+
+.slide-hidden {
+  max-height: 0;
+}
+
+.slide-visible {
+  max-height: 200px; /* Adjust this based on content */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Add HTML here -->
+  <div class="container">
+    <button id="toggleSlide">Show Caste</button>
+    <div id="slideSection" class="slide-hidden">
+      <p>Caste Information: General</p>
+    </div>
+  </div>
+  
+  <script>
+    // Add JavaScript here
+    document.getElementById("toggleSlide").addEventListener("click", function () {
+  const slideSection = document.getElementById("slideSection");
+  if (slideSection.classList.contains("slide-hidden")) {
+    slideSection.classList.remove("slide-hidden");
+    slideSection.classList.add("slide-visible");
+    this.textContent = "Hide Caste";
+  } else {
+    slideSection.classList.remove("slide-visible");
+    slideSection.classList.add("slide-hidden");
+    this.textContent = "Show Caste";
+  }
+});
+
+  </script>
+</body>
+</html>
