@@ -9,7 +9,7 @@ function LikeAndDislike(props) {
     const [error, setError]=useState(null);
     useEffect(()=>{
         //Ferch the like and deslike 
-        fetch(`http://localhost:5000/api/like&deslike/${reviewId}`)
+        fetch(`https://moviereviewwebsite.onrender.com/api/like&deslike/${reviewId}`)
         .then((response)=>{
             if(!response.ok){
                 throw new Error("Failt to fetch the like and dislike");
