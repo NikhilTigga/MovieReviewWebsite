@@ -17,7 +17,7 @@ function Home() {
             return;
         }
         // Fetch the MovieDetails from the backend
-        fetch("http://localhost:5000/api/movies", {
+        fetch("https://moviereviewwebsite.onrender.com/api/movies", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
