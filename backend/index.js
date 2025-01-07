@@ -19,7 +19,7 @@ const pool = new Pool({
 });
 // Use CORS middleware to allow requests from specific origins
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow only requests from your React app
+    origin: 'https://moviereviewwebsite-front-end.onrender.com', // Allow only requests from your React app
     methods: ['GET', 'POST'], // Allow GET and POST requests (customize as needed)
     credentials: true // Allow cookies (if needed)
   }));
