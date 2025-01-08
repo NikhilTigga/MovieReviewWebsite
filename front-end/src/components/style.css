@@ -5,9 +5,13 @@
 body{
     background-color: #0f172a;
 }
+.rootDiv{
+    width: 100%;
+}
 
 header{
     background-color: black;
+    height: 100px;
     
 }
 .Logo{
@@ -17,15 +21,17 @@ header{
 
 .main{
     background-color:#0f172a;
-    padding: 25px;
-    height: 100vh;
-    width: 94%;
-    margin: 0 auto;
+    
+    width: 58%;
+   
+    
+    margin: 6px auto;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 .contentArea{
    
     margin: 0 auto;
-    width: 40%;
+   
     display: flex;
     justify-content: space-around;
 }
@@ -61,7 +67,7 @@ header{
 .container{
     background-color: #f8fafcd4;
     margin: 0 auto;
-    width: 38em;
+    width: 75%;
     margin-top: 20px;
 
 }
@@ -113,16 +119,15 @@ background-color: #000000;
 } 
 .textReview{
     background-color:#0f172a;
-    position: fixed;
-    bottom: 0;
-    left: 52.7%; /* Start from the middle of the page */
-    transform: translateX(-50%); /* Shift it back by half its width to center */
-    width: 42%;
+    
+    
+    
+   
 }
 .textLogo {
     background-color: white;
     position: relative;
-    top: 100px;
+    top: 55px;
     border-radius: 50px;
     width: 40px;
     height: 40px;
@@ -131,7 +136,7 @@ background-color: #000000;
     left: -42px;
 }
 .sliderContainer{
-    width: 115vh;
+    width: 96%;
    margin: 2px;
 }
 .homeContainer{
@@ -141,6 +146,7 @@ background-color: #000000;
 }
 .contentAreaAndVideo{
     margin: 22px 0px 22px 0px;
+    width: 100%;
 }
     
 
@@ -168,3 +174,29 @@ background-color: #000000;
     border-radius: 10px;
 
 }
+@media (max-width: 768px) { /* Adjust 768px as per your design needs */
+    .homeContainer {
+        width: 100%;
+        margin: 0;
+    }
+    .movieTrailer iframe{
+        width: 330px;
+        height: 193px;
+        margin-left: 5px;
+    }
+    .contentArea{
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    .movieDetails {
+        padding: 0px 0px 0px 0px;
+    }
+    .main{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+   
+   
+} 

@@ -6,9 +6,9 @@ function TextComment(){
         <>
         <div className="container textReview">
             <div className="row">
-                <div className="col-10 icon-textarea-container">
+                <div className="col-12 icon-textarea-container">
                 <span className="comment-icon"><CommentIcon/></span>
-                <textarea name="textComment" id="" rows={6}></textarea>
+                <textarea name="textComment" id="" rows={4}></textarea>
                 <span className="textLogo"><SendIcon/> </span>
 
                 </div>

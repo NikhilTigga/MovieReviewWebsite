@@ -60,7 +60,7 @@ function Content() {
                 )}
                 {movieDetails ? (
 
-                    <div className="contentArea" style={{ margin: "auto", width: "115vh", backgroundColor: "#020617", boxShadow: "0 4px 7px rgba(0, 0, 0, 0.1)" }}>
+                    <div className="contentArea" style={{ margin: "auto", width :"100%", backgroundColor: "#020617", boxShadow: "0 4px 7px rgba(0, 0, 0, 0.1)" }}>
 
                         <div key={movieDetails.id} className="moviePoster">
                             {movieDetails.poster_url ? (
@@ -96,7 +96,7 @@ function Content() {
                     )
                 )}
                 {reviewDetails && reviewDetails.length > 0 ? (
-                    <div className="mainContent" style={{ backgroundColor: "#64748b", width: "94vh", margin: "auto", padding: "1px 0px 8px 0px", boxShadow: "0 4px 7px rgba(0, 0, 0, 0.1)" }}>
+                    <div className="mainContent" style={{ backgroundColor: "#64748b", width: "98%", margin: "auto", padding: "1px 0px 8px 0px", boxShadow: "0 4px 7px rgba(0, 0, 0, 0.1)" , borderRadius:"5px"}}>
                    { reviewDetails.map((review) => (
 
                             <Review

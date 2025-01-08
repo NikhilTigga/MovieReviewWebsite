@@ -55,7 +55,7 @@ function Home() {
                     movies.map((movie) => (
                         <div className="contentAreaAndVideo">
                             <div className="mainContentArea">
-                            <div className="contentArea" style={{ margin: "0px", width: "115vh" }}>
+                            <div className="contentArea" style={{ margin: "0px",width :"100%" }}>
 
                                 <div key={movie.id} className="moviePoster">
                                     {movie.poster_url ? (
