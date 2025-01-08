@@ -8,7 +8,7 @@ function MonthYearDropdown({ onFind }) {
 
   // Fetch months and years from the backend
   useEffect(() => {
-    fetch('http://localhost:5000/api/months-years')
+    fetch('https://moviereviewwebsite.onrender.com/api/months-years')
       .then((response) => response.json())
       .then((data) => {
         setData(data);

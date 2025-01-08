@@ -14,7 +14,7 @@ function Content() {
 
     useEffect(() => {
         // Fetch movie details when the component mounts
-        fetch(`http://localhost:5000/api/movies/${movieId}`)
+        fetch(`https://moviereviewwebsite.onrender.com/api/movies/${movieId}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch movie details");
@@ -31,7 +31,7 @@ function Content() {
     }, [movieId]);
     useEffect(() => {
         //Fetch review details from the database
-        fetch(`http://localhost:5000/api/moviereview/${movieId}`)
+        fetch(`https://moviereviewwebsite.onrender.com/api/moviereview/${movieId}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch review details");
